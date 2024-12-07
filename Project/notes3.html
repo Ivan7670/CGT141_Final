@@ -1,0 +1,56 @@
+<html>
+    <!--Global Header-->
+    <head>
+        <body style="background-color:rgb(255, 255, 255)"></body>
+        <title> Final Project</title>
+        <link href="css/Project.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="dropdown">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="todo.html">To-Do</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="hw.html">Homework</a>
+                    <a href="Notes/notes1.html">Notes</a>
+                    <a href="timer.html">Timer</a>
+                    <a href="study.html">Study Tips</a>
+                </div>
+            </div>
+            <div id="navbaritems" class="topnav">
+                <a id="burger" style="font-size: 40px; margin-top: 1px;margin-left: 2.8%;" onclick="openNav()">&#9776;</a>
+                <a href="account.html" id="profilebtn"><img src="images/profileicon.png" width="33px" height="28px" style="margin-top: -3px;float:right;"></a>
+                <a id="navitems" href="index.html">HOME</a>
+                <a>&bull;</a>
+                <a style="text-underline-offset: 3px;text-decoration: underline;">NOTES</a>
+            </div>
+            <topnavtext id="topnavtext" class="topnavtext">
+                <input type="text" id="topnavtext1" placeholder="Working On" onfocus="localStorage.removeItem('topnavtext1');topnavtext1.value=''">
+                <span>|</span>
+                <input type="text" id="topnavtext2" placeholder="Next Event" onfocus="localStorage.removeItem('topnavtext2');topnavtext2.value=''">
+            </topnavtext>
+          </div>
+          <div id="bottom"></div>
+          <pagehead class="pagehead">Notes</pagehead>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">More Notes</button>
+            <div class="dropdown-content">
+                <a id="note1" href="notes1.html">Notes #1</a>
+                <a id="note2" href="notes2.html">Notes #2</a>
+                <a id="note4" href="notes4.html">Notes #4</a>
+            </div>
+        </div>
+        <div class="notes" id="pages">
+            <div id="page1" class="note-page active-page">
+                <input type="text" id="notetitle3" placeholder="Note #3" onfocus="localStorage.removeItem('notetitle3');notetitle3.value=''">
+                <textarea id="notespage3" placeholder="Type your notes here..."></textarea>
+                <button onclick="topFunction()" id="topbtn" >Top</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/Notesjs/notes3.js"></script>
+    </body>
+</html>

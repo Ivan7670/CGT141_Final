@@ -1,0 +1,309 @@
+<!--Option + Z to text wrap-->
+
+<html>
+    <!--Global Header-->
+    <head>
+        <body style="background-color:rgb(255, 255, 255)"></body>
+        <title> Final Project</title>
+        <link href="css/Project.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="dropdown">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="todo.html">To-Do</a>
+                    <a href="calendar.html">Calendar</a>
+                    <a href="notes1.html">Notes</a>
+                    <a href="timer.html">Timer</a>
+                    <a href="study.html">Study Tips</a>
+                </div>
+            </div>
+            <div id="navbaritems" class="topnav">
+                <a id="burger" onclick="openNav()">&#9776;</a>
+                <a href="account.html" id="profilebtn"><img src="images/profileicon.png" width="33px" height="28px" style="margin-top: -3px;float:right;"></a>
+                <a id="navitems" href="index.html">HOME</a>
+                <a>&bull;</a>
+                <a style="text-underline-offset: 3px;text-decoration: underline;">TODO</a>
+                <a href="account.html" id="profilebtn"><img src="images/profileicon.png" width="33px" height="28px" style="margin-top: -5px;margin-left: 3200%;"></a>
+            </div>
+            <topnavtext id="topnavtext" class="topnavtext">
+                <input type="text" id="topnavtext1" placeholder="Working On" onfocus="localStorage.removeItem('topnavtext1');topnavtext1.value=''">
+                <span>|</span>
+                <input type="text" id="topnavtext2" placeholder="Next Event" onfocus="localStorage.removeItem('topnavtext2');topnavtext2.value=''">
+            </topnavtext>
+          </div>
+            <div id="bottom"></div>
+                <pagehead class="pagehead">To-Do</pagehead>
+                <caltitle id="caltitle">Calendar</caltitle>
+                <todotitle1 id="todotitle">Daily</todotitle1>
+                <todotitle2 id="todotitle">Weekly</todotitle2>
+
+                <todocal id="todocal">
+                    <div class="calendar-container">
+                        <header class="calendar-header">
+                            <p class="calendar-current-date"></p>
+                            <div class="calendar-navigation">
+                                <span id="calendar-prev" 
+                                      class="material-symbols-rounded">
+                                      &lt 
+                                </span>
+                                <span id="calendar-next" 
+                                      class="material-symbols-rounded">
+                                      &gt
+                                </span>
+                            </div>
+                        </header>
+                
+                        <div class="calendar-body">
+                            <ul class="calendar-weekdays">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="calendar-dates"></ul>
+                        </div>
+                    </div>
+                </todocal>
+                <tododaily id="todo">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chkbtn1" name="todo">
+                                    <input type="text" id="todod1" placeholder="New Task" onfocus="localStorage.removeItem('todod1');todod1.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chkbtn2" name="todo">
+                                    <input type="text" id="todod2" onfocus="localStorage.removeItem('todod2');todod2.value=''">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn3" name="todo">
+                                    <input type="text" id="todod3" onfocus="localStorage.removeItem('todod3');todod3.value=''">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn4" name="todo">
+                                    <input type="text" id="todod4" onfocus="localStorage.removeItem('todod4');todod4.value=''">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn5" name="todo">
+                                    <input type="text" id="todod5" onfocus="localStorage.removeItem('todod5');todod5.value=''">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn6" name="todo">
+                                    <input type="text" id="todod6" onfocus="localStorage.removeItem('todod6');todod6.value=''">
+                            </td>
+                        </tr>
+                    </table>
+                </tododaily>
+                <todoweekly id="todo">
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chkbtn7" name="todo">
+                                    <input type="text" id="todow1" placeholder="New Task" onfocus="localStorage.removeItem('todow1');todow1.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="chkbtn8" name="todo">
+                                    <input type="text" id="todow2" onfocus="localStorage.removeItem('todow2');todow2.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn9" name="todo">
+                                    <input type="text" id="todow3" onfocus="localStorage.removeItem('todow3');todow3.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn10" name="todo">
+                                    <input type="text" id="todow4" onfocus="localStorage.removeItem('todow4');todow4.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn11" name="todo">
+                                    <input type="text" id="todow5" onfocus="localStorage.removeItem('todow5');todow5.value=''"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="chkbtn12" name="todo">
+                                    <input type="text" id="todow6" onfocus="localStorage.removeItem('todow6');todow6.value=''"> 
+                            </td>
+                        </tr>
+                    </table>
+                </todoweekly>
+                <kanbantitles class="kanbantitles">
+                    
+                </kanbantitles>
+                <kanbantitle1 id="kanbantitle">
+                    <kanbantitles class="kanbantitles">
+                        <input type="text" id="kanbantitle1" class="kanbantitles" placeholder="Backlog" onfocus="localStorage.removeItem('kanbantitle1');kanbantitle1.value=''">
+                    </kanbantitles>
+                </kanbantitle1>
+                <kanbantitle2 id="kanbantitle">                    
+                    <kanbantitles class="kanbantitles">
+                        <input type="text" id="kanbantitle2" class="kanbantitles" placeholder="To-Do" onfocus="localStorage.removeItem('kanbantitle2');kanbantitle2.value=''">
+                    </kanbantitles>
+                </kanbantitle2>
+
+                <kanbantitle3 id="kanbantitle">
+                    <kanbantitles class="kanbantitles">
+                        <input type="text" id="kanbantitle3" class="kanbantitles" placeholder="In Progress" onfocus="localStorage.removeItem('kanbantitle3');kanbantitle3.value=''">
+                </kanbantitle3>
+                    </kanbantitles>
+                <kanbantitle4 id="kanbantitle">
+                    <kanbantitles class="kanbantitles">
+                        <input type="text" id="kanbantitle4" class="kanbantitles" placeholder="Completed" onfocus="localStorage.removeItem('kanbantitle4');kanbantitle4.value=''">
+                    </kanbantitles>
+                </kanbantitle4>
+
+                <kanban1 id="kanban"><table style="width:100%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn13" name="todo">
+                                <input type="text" id="kanbanb1" placeholder="New Task" onfocus="localStorage.removeItem('kanbanb1');kanbanb1.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn14" name="todo">
+                                <input type="text" id="kanbanb2" onfocus="localStorage.removeItem('kanbanb2');kanbanb2.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn15" name="todo">
+                                <input type="text" id="kanbanb3" onfocus="localStorage.removeItem('kanbanb3');kanbanb3.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn16" name="todo">
+                                <input type="text" id="kanbanb4" onfocus="localStorage.removeItem('kanbanb4');kanbanb4.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn17" name="todo">
+                                <input type="text" id="kanbanb5" onfocus="localStorage.removeItem('kanbanb5');kanbanb5.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn18" name="todo">
+                                <input type="text" id="kanbanb6" onfocus="localStorage.removeItem('kanbanb6');kanbanb6.value=''"> 
+                        </td>
+                    </tr>
+                </table></kanban1>
+                <kanban2 id="kanban"><table style="width:100%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn19" name="todo">
+                                <input type="text" id="kanband1" placeholder="New Task" onfocus="localStorage.removeItem('kanband1');kanband1.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn20" name="todo">
+                                <input type="text" id="kanband2" onfocus="localStorage.removeItem('kanband2');kanband2.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn21" name="todo">
+                                <input type="text" id="kanband3" onfocus="localStorage.removeItem('kanband3');kanband3.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn22" name="todo">
+                                <input type="text" id="kanband4" onfocus="localStorage.removeItem('kanband4');kanband4.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn23" name="todo">
+                                <input type="text" id="kanband5" onfocus="localStorage.removeItem('kanband5');kanband5.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn24" name="todo">
+                                <input type="text" id="kanband6" onfocus="localStorage.removeItem('kanband6');kanband6.value=''"> 
+                        </td>
+                    </tr>
+                </table></kanban2>
+                <kanban3 id="kanban"><table style="width:100%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn25" name="todo">
+                                <input type="text" id="kanbanp1" placeholder="New Task" onfocus="localStorage.removeItem('kanbanp1');kanbanp1.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn26" name="todo">
+                                <input type="text" id="kanbanp2" onfocus="localStorage.removeItem('kanbanp2');kanbanp2.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn27" name="todo">
+                                <input type="text" id="kanbanp3" onfocus="localStorage.removeItem('kanbanp3');kanbanp3.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn28" name="todo">
+                                <input type="text" id="kanbanp4" onfocus="localStorage.removeItem('kanbanp4');kanbanp4.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn29" name="todo">
+                                <input type="text" id="kanbanp5" onfocus="localStorage.removeItem('kanbanp5');kanbanp5.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn30" name="todo">
+                                <input type="text" id="kanbanp6" onfocus="localStorage.removeItem('kanbanp6');kanbanp6.value=''"> 
+                        </td>
+                    </tr>
+                </table></kanban3>
+                <kanban4 id="kanban"><table style="width:100%">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn31" name="todo">
+                                <input type="text" id="kanbanc1" placeholder="New Task" onfocus="localStorage.removeItem('kanbanc1');kanbanc1.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkbtn32" name="todo">
+                                <input type="text" id="kanbanc2" onfocus="localStorage.removeItem('kanbanc2');kanbanc2.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn33" name="todo">
+                                <input type="text" id="kanbanc3" onfocus="localStorage.removeItem('kanbanc3');kanbanc3.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn34" name="todo">
+                                <input type="text" id="kanbanc4" onfocus="localStorage.removeItem('kanbanc4');kanbanc4.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn35" name="todo">
+                                <input type="text" id="kanbanc5" onfocus="localStorage.removeItem('kanbanc5');kanbanc5.value=''"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="chkbtn36" name="todo">
+                                <input type="text" id="kanbanc6" onfocus="localStorage.removeItem('kanbanc6');kanbanc6.value=''"> 
+                        </td>
+                    </tr>
+                </table></kanban4>
+            </out> 
+            <script src="js/todo.js"></script>   
+        </body>
+</html>

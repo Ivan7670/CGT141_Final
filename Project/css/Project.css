@@ -1,0 +1,1190 @@
+/*Global Header*/
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background: rgb(225, 225, 225);
+  margin: 0px;
+}
+
+#header {
+  width: 100%;
+  height: 10%;
+  margin: 0%;
+  font: 30px;
+  background: rgb(93, 120, 104)
+  
+}
+
+.navbar {
+  background-color: #425172;
+  height: 60px;
+  box-shadow: 50px -80px 70px 75px black;
+}
+
+  
+.topnav a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 16px 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Tahoma, Verdana, sans-serif;
+  margin-top:1px ;
+  margin-left: 1%;
+}
+
+#burger {
+  margin-left: 2.4%;
+  padding: 0px 10px;
+  font-size: 40px;
+}
+
+#burger:hover{
+  cursor: pointer;
+}
+
+.topnav a:hover {
+  opacity: 70%;
+}
+
+.dropdown {
+  float: left;
+  margin-left: 2%;
+}
+
+.pagehead {
+    float: left;
+    margin: auto;
+    width:100%;
+    padding-top: 2%;
+    background:inherit;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: bolder;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-indent: 3%;
+    background-color: transparent;
+}
+
+.pageheadtime {
+  float:left;
+  width:100%;
+  padding-top: 2%;
+  background:inherit;
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: bolder;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-indent: 3%;
+}
+
+.topnavtext{
+  width:30%;
+  height: 10%;
+  border: none;
+  float:right ;
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color: transparent;
+  color: white;
+  margin-right: 10%;
+}
+
+.topnavtext span{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#topnavtext1{
+  text-align: right;
+  margin-right: 1%;
+}
+
+#topnavtext2{
+  text-align: left;
+  margin-left: 1%;
+}
+
+#topnavtext input[type=text] {
+  border: none;
+  font-size: 18px;
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color: transparent;
+  color: white;
+}
+
+#topnavtext input::placeholder{
+  color: white;
+  opacity: 50%;
+}
+
+#todo input[type=text]:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  cursor:pointer
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*ToDo*/
+
+.table, th, td {
+    width: 5%;
+    height:5%;
+    border: 0px solid;
+}
+
+.th {
+    text-align: left;
+    padding:1.5%;
+}
+
+#todotitle {
+    float:left;
+    width:34%;
+    margin: auto;
+    margin-top:1%;
+    margin-left:3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background:rgb(122, 122, 122);
+    color: white;
+    font-size: 130%;
+    font-family: Tahoma, Verdana, sans-serif;
+    border-radius: 12px 12px 0px 0px;
+    border: 5px solid black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#caltitle {
+    float:left;
+    width:20%;
+    margin: auto;
+    margin-top:1%;
+    margin-left:2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background:rgb(112, 112, 112);
+    color: white;
+    font-size: 130%;
+    font-family: Tahoma, Verdana, sans-serif;
+    border-radius: 12px 12px 0px 0px;
+    border: 5px solid black;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#todocal {
+    float:left;
+    width:20%;
+    height: 30%;
+    margin-bottom:2%;
+    margin-left: 2%;
+    background:rgb(240, 240, 240);
+    border-radius: 0px 0px 12px 12px;
+    border: 5px solid black;
+    margin-top: -5px;
+}
+
+#todo {
+    float:left;
+    width:34%;
+    height:30%;
+    margin-bottom:3%;
+    margin-left:3%;
+    background:rgb(240, 240, 240);
+    border-radius: 0px 0px 12px 12px;
+    border: 5px solid black;
+    margin-top: -5px;
+}
+
+#kanbantitle {
+  float:left;
+  width:21.9%;
+  margin-left:2%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background:rgb(112, 112, 112);
+  color: white;
+  font-size: 80%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#kanban {
+    float:left;
+    width:21.9%;
+    height:30%;
+    margin-left:2%;
+    background:rgb(240, 240, 240);
+    border-radius: 0px 0px 12px 12px;
+    border: 5px solid black;
+    margin-top: -5px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=checkbox]:hover {
+  outline: none;
+  accent-color: white;
+  opacity: 100%;
+}
+
+input[type=checkbox] {
+  margin-left: 3%;
+  height: 2.4vh;
+  margin-top: 12px;
+  width: 2.4vw;
+  opacity: 30%;
+  accent-color: black;
+}
+
+input::placeholder {
+  opacity: 30%;
+}
+
+input[type=checkbox]:checked {
+  opacity: 100%;
+}
+
+#todo input[type=text] {
+    width: 80%;
+    height: 3%;
+    margin-top: 12px;
+    margin-left: 2%;
+    vertical-align:top;
+    outline: 0px;
+    border:0px;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+#todo input[type=text]:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+#kanban input[type=text] {
+  width: 80%;
+  height: 3%;
+  margin-top: 12px;
+  margin-left: 2%;
+  vertical-align:top;
+  outline: 0px;
+  border:0px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+#kanban input[type=text]:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+/*Timer*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.timer {
+  background-color: transparent;
+  display: flex;
+  position: static;
+  height: 70%;
+  width: 580px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.main button {
+  font-size: 15px;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 3px;
+  font-weight:bold
+}
+
+.main button:hover {
+  border:3px solid rgb(155, 155, 155);
+}
+
+.active {
+  color: rgb(240, 240, 240);
+  border: none;
+}
+
+.timer-area {
+  font-weight: bolder;
+  font-size: 200px;
+  margin-top: 20px;
+}
+
+#min {
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  font-weight: bolder;
+  font-size: 200px;
+  text-align: right;
+  background: white;
+  margin-top: -230.6px;
+  margin-left: 0px;
+}
+
+/*calendar todo*/
+
+.calendar-container {
+  background: rgb(240,240,240);
+  margin: auto;
+  width: 19vw;
+  height: 19vh;
+}
+
+.calendar-container header {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 10px;
+  justify-content: space-between;
+}
+
+header .calendar-navigation {
+  display: flex;
+}
+
+header .calendar-navigation span {
+  height: 38px;
+  width: 30px;
+  margin: 0 0px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 20%;
+  user-select: none;
+  color: #aeabab;
+  font-size: 1.9rem;
+}
+
+.calendar-navigation span:last-child {
+  margin-right: -10px;
+}
+
+.calendar-navigation:hover {
+  opacity: 70%;
+}
+
+header .calendar-navigation span:hover {
+  background: #f2f2f2;
+}
+
+header .calendar-current-date {
+  text-indent: -10px;
+  font-weight:500;
+  font-size: 20px;
+}
+
+.calendar-body {
+  padding: 5px;
+}
+
+.calendar-body ul {
+  list-style: none;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+}
+
+.calendar-body .calendar-dates {
+  margin-bottom: 10px;
+}
+
+.calendar-body li {
+  width: calc(100% / 7);
+  font-size: 14px;
+  color: #414141;
+}
+
+.calendar-body .calendar-weekdays li {
+  cursor: default;
+  font-weight: 500;
+}
+
+.calendar-body .calendar-dates li {
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.calendar-dates li.inactive {
+  color: #aaa;
+}
+
+.calendar-dates li.active {
+  color: #fff;
+}
+
+.calendar-dates li::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calendar-dates li.active::before {
+  background: #555555;
+}
+
+.calendar-dates li:not(.active):hover::before {
+  background: #e4e1e1;
+}
+
+/*home*/
+#calhomec {
+  float:left;
+  width:82%;
+  height:30%;
+  background:rgb(240, 240, 240);
+  margin-bottom: 2%;
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+}
+
+#space {
+  float: left;
+  width:13%;
+  height: 30%;
+  background-color: transparent;
+}
+
+#space2 {
+  margin: 2.5%;
+  float: left;
+  width:10%;
+  height: 10%;
+  background-color: transparent;
+}
+
+#calhometitle {
+  float:left;
+  width:94%;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  background:rgb(122, 122, 122);
+  color: white;
+  text-align:center;
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+}
+
+#calhometitle:hover {
+  opacity: 90%;
+}
+
+#hwtitlehome:hover {
+  opacity: 90%;
+}
+
+#todotitlehome {
+  float:left;
+  width:25%;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  background:rgb(122, 122, 122);
+  color: white;
+  text-align:center;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+}
+
+#todohome {
+  float:left;
+  width:25%;
+  height:30%;
+  margin-bottom:3%;
+  margin-left:3%;
+  margin-top: -5px;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+}
+
+
+
+#hwtitlehome {
+  float:left;
+  width:35%;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  background:rgb(122, 122, 122);
+  color: white;
+  text-align:center;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+}
+
+#timertitle {
+  float:left;
+  width:27%;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.75%;
+  padding-bottom: 0.75%;
+  background:rgb(122, 122, 122);
+  color: white;
+  text-align:center;
+  font-size: 130%;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+}
+
+#timertitle:hover {
+  opacity: 90%;
+}
+
+#todotitlehome:hover {
+  opacity: 90%;
+}
+
+#timerhome {
+  float:left;
+  width:27%;
+  height:30%;
+  margin-bottom:3%;
+  margin-left:3%;
+  margin-top: -5px;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+}
+
+#tiphome {
+  float:left;
+  width:35%;
+  height:30%;
+  margin-bottom:3%;
+  margin-left:3%;
+  margin-top: -5px;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+#tiphome p{
+  padding-top: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+#tiphome b{
+  font-size: 1.8vw;
+}
+
+/*Mini Timer*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.minitimer {
+  background-color: inherit;
+  display: flex;
+  height: 20%;
+  width: 10%;
+  text-align: center;
+  align-items: center;
+  padding: 40px 0;
+  text-indent: 55px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.minimain button {
+  font-size: 12px;
+  padding: 7px;
+  border-radius: 10px;
+  width: 5vw;
+  margin-top: 3px;
+  font-weight:bold;
+  background-color: transparent;
+}
+
+.active {
+  color: rgb(240, 240, 240);
+  border: none;
+}
+
+.minitimer-area {
+  font-weight: bolder;
+  font-size: 100px;
+  margin-top: 20px;
+}
+
+#minimin {
+  position: absolute;
+  width: 160px;
+  height: 120px;
+  font-weight: bolder;
+  font-size: 100px;
+  text-align: right;
+  background: transparent;
+  margin-left: 22.3px;
+  margin-top: -120.4px;
+  background-color:  rgb(240, 240, 240);
+}
+
+#todohome input[type=text] {
+  width: 80%;
+  height: 3%;
+  margin-top: 12px;
+  margin-left: 2%;
+  vertical-align:top;
+  outline: 0px;
+  border:0px;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+#todohome input[type=text]:hover {
+  background-color: rgb(213, 213, 213);
+}
+
+#frm1 input[type=text] {
+  border: none;
+}
+
+/*daniel's code*/
+
+#rightcolumn {
+  float:left;
+  width:49.7%;
+  height:40%;
+  margin-left:3%;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+  margin-top: -5px;
+  margin-bottom: 1%;
+}
+
+#leftcolumn {
+  float:left;
+  width:39.75%;
+  height:70%;
+  margin-left:3%;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+  margin-top: -5px;
+}
+
+h1, h2 {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 24pt; 
+  margin: 0;
+  padding: 0; 
+}
+
+
+.start {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.description {
+  font-family: Tahoma, Verdana, sans-serif;
+  margin-top: 2.5%;
+  font-size: 10pt; 
+  color: #5a5a5a;
+  float: left;
+  width: 50%;
+  height: 120;
+  margin-left: 5%;
+}
+
+.video {
+  float: left;
+  outline:3px solid black;
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+
+
+.image {
+  float: left;
+  margin-right: 5%;
+  margin-left: 3%;
+  outline:3px solid black;
+  margin-top: 2%;
+}
+
+
+.description2 {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 9pt; 
+  color: #5a5a5a;
+  float: left;
+  width: 75%;
+  height: 80px;
+  margin-top: 2%;
+}
+
+
+.new-column {
+  float:left;
+  width:23.2%;
+  height:15%;
+  margin-left:3%;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 0px 0px 12px 12px;
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color:  rgb(240, 240, 240);
+  padding-top: 30px;
+}
+
+
+.new-column2 { 
+  float:left;
+  width:23.2%;
+  height:16%;
+  margin-left:3%;
+  background:rgb(240, 240, 240);
+  border-radius: 0px 0px 12px 12px;
+  border: 5px solid black;
+  margin-top: -5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px 0px 12px 12px;
+  font-family: Tahoma, Verdana, sans-serif;
+  background-color:  rgb(240, 240, 240);
+  padding-top: 20px;
+}
+
+.new-column2 a{
+  color: black;
+}
+
+#videotitle {
+  float:left;
+  width:39.75%;
+  margin: auto;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#articlestitle {
+  float:left;
+  width:49.7%;
+  margin: auto;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tiptitle {
+  float:left;
+  width:23.2%;
+  margin: auto;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#satitle {
+  float:left;
+  width:23.2%;
+  margin: auto;
+  margin-top:2%;
+  margin-left:3%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*calendar*/
+
+iframe{
+  filter: invert(0) saturate(0) contrast(0.88);
+}
+
+#notespage {
+  width: 90%;
+}
+
+.notes {
+  margin-left: 220px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.input-container {
+  padding: 20px;
+}
+
+#new-page-name {
+  padding: 10px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.note-page {
+  display: none;
+}
+
+.active-page {
+  display: block;
+}
+
+#page1 textarea {
+  float: left;
+  width: 90%;
+  height:150%;
+  font-size: 16px;
+  outline: 5px solid black;
+  border-radius: 0px 12px 12px 12px;
+  padding: 20px 20px;
+  margin-bottom: 10%;
+}
+
+.dropbtn {
+  margin-left: 14px;
+  margin-top: 100px;
+  background:rgb(122, 122, 122);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 14px;
+  background-color: #f1f1f1;
+  min-width: 119px;
+  margin-top: -6px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border: 3px solid black;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-top: -3px;
+}
+
+.dropdown-content a:hover {opacity: 70%;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {opacity: 70%;}
+
+#page1 input[type=text]{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  width: 40%;
+  margin-left: -5px;
+}
+
+#page1 input[type=text]:hover{
+  font-size: 24px;
+  background-color: #888888;
+}
+
+#notetitle {
+  float:left;
+  margin: auto;
+  padding-top: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 3%;
+  margin-top: 2%;
+}
+
+#notetitle2 {
+  float:left;
+  margin: auto;
+  padding-top: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 3%;
+  margin-top: 2%;
+}
+
+#notetitle3 {
+  float:left;
+  margin: auto;
+  padding-top: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 3%;
+  margin-top: 2%;
+}
+
+#notetitle4 {
+  float:left;
+  margin: auto;
+  padding-top: 0.5%;
+  background:rgb(122, 122, 122);
+  color: white;
+  font-size: 130%;
+  font-family: Tahoma, Verdana, sans-serif;
+  border-radius: 12px 12px 0px 0px;
+  border: 5px solid black;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 3%;
+  margin-top: 2%;
+}
+
+#page1 input::placeholder{
+  color: white;
+  opacity: 90%;
+}
+
+.kanbantitles{
+ text-align: center;
+ border: none;
+ background-color: transparent;
+ color: white;
+ opacity: 100%;
+ font-size: 130%;
+ font-weight: bold;
+ font-family: Tahoma, Verdana, sans-serif;
+}
+
+.kanbantitles input::placeholder{
+  color: white;
+  opacity: 100%;
+}
+
+.new-column p{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#topnavtext1:hover{
+  opacity: 70%;
+}
+
+#topnavtext2:hover{
+  opacity: 70%;
+}
+
+#form{
+  width: 500px;
+  background-color: transparent;
+  margin: auto;
+  font-size: 24px;
+  padding-top: 15%;
+  text-align: left;
+  font-family: Tahoma;
+}
+
+#form input[type="text"]{
+  outline:1px solid black;
+  width: 500px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#form input[type="password"]{
+  outline:1px solid black;
+  width: 500px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#form input:focus{
+  outline:1px solid black;
+  width: 500px;
+  font-size: 24px;
+  border-radius: 12px;
+}
+
+#form input[type="submit"]{
+  width: 500px;
+  height: 50px;
+  background-color:rgb(122, 122, 122);
+  border-radius: 12px;
+  border: 3px solid black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#topbtn {
+  position: fixed;
+  bottom: 20px;
+  right: 3%;
+  font-size: 16px;
+  border: 3px solid black;
+  outline: none;
+  background-color: rgb(122, 122, 122);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  width: 80px;
+}
